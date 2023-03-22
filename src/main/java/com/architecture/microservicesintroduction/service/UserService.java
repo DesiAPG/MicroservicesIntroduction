@@ -2,8 +2,13 @@ package com.architecture.microservicesintroduction.service;
 
 import com.architecture.microservicesintroduction.entity.User;
 
-public interface UserService{
+import java.util.List;
+
+public interface UserService {
     User saveUser(User user);
 
-    
+    List<User> listAllUsers();
+
+    User getUsers(String user);
+
 }
